@@ -6,11 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/startBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="두 번째 액티비티 시작"
         android:layout_centerInParent="true" />
+
+
+    <!-- Fragment를 추가할 FrameLayout -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addFragmentBtn"
+        android:layout_below="@+id/removeFragmentBtn" />
+
+    <Button
+        android:id="@+id/addFragmentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 추가"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/removeFragmentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 제거"
+        android:layout_above="@+id/addFragmentBtn"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
