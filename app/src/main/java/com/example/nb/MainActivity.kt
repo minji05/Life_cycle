@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Log.d("MainActivity", "onCreate 호출됨")
 
+        Log.d("MainActivity", "onCreate 호출됨")
+        showToast("Hello World")
 
         binding.startBtn.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
